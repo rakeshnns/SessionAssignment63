@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>Assignment 6.3</title>
+    <!-- Style for the HTML content -->
+	<style>
+        table {
+         font-family: arial, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+        }
+
+        td, th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+        }
+
+        tr:nth-child(even) {
+         background-color: #dddddd;
+        }
+    </style>
+
+   <!-- External Javascript -->
+   <script src="assignment63.js"></script>
+ </head>  
+ <body>
+   
+    Student Name:<input type="text" id = "nam" name = "studentname">
+    Physisc:<input type="number" name = "physics" min = "0" and max="100"  id = "phy">
+    Maths:<input type="number" name = "Matematics" min = "0" and max="100"  id = "mat">
+    Chemistry:<input type="number" name = "Chemistry" min = "0" and max="100" id = "che">
+    <button type="submit" onclick="submit()">submit</button>
+	<p id="message"></p>
+	<div id="result"></div>
+ </body>
+</html>
